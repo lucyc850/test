@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Reqstress/reqstress"
+	"github.com/utkusen/reqstress"
 )
 
 func main() {
