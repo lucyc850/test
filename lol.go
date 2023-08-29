@@ -1,16 +1,16 @@
 package main
 
 import (
-	"github.com/utkusen/reqstress"
+	"github.com/buaazp/stress"
 )
 
 func main() {
-	config := &reqstress.Config{
+	config := &stress.Config{
 		URL:         "http://88.198.59.166/cc",
 		Method:      "GET",
 		Concurrency: 10,
 		Requests:    1000,
 	}
 
-	reqstress.NewRunner(config).Run()
+	stress.NewRunner(config).Run()
 }
